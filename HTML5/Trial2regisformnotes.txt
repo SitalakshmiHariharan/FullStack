@@ -1,0 +1,112 @@
+.<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">  
+<title>Registration Form</title>
+<style>
+  .bordered {
+    width: 380px;
+	margin: auto;
+    height: 180px;
+    padding: 20px;
+    border: 1px solid darkorange;
+    border-radius: 8px;	
+	margin: 6px 0px 0px 100px;   
+  }
+  .button{
+  background-color: #f44336;   
+  color: white;
+  padding: 15px 32px;
+  text-align: center; 
+  border-radius: 8px;  
+  }
+  
+</style>
+</head>
+
+<body>
+<h1>Registration Form</h1>
+<form>
+<div class="bordered">
+<table width="400" border="0" cellpadding="0" cellspacing="3">  
+  <tr>
+    <td>Name:</td>
+    <td><input name="name" type="text"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Date of Birth:</td>
+    <td><input type="date" name="dob" value="dd/mm/yyyy"></td>
+    <td>&nbsp;</td>
+  </tr>   
+  <tr>
+  <td>country:</td>
+<td><input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="India">
+    <option value="United States">
+    <option value="United Kingdom">
+    <option value="Australia">
+    <option value="France">
+  </datalist></td>
+<td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Phone Number:</td>
+    <td><input type="tel" name="phone"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td><input name="email" type="email"></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td>Website:</td>
+    <td><input name="url" type="url"></td>
+    <td>&nbsp;</td>
+  </tr>  
+  </table>  
+  </div> 
+    <button class="button">Submit</button>
+    &nbsp;  	
+</form>  
+</body>
+
+</html>
+
+ <video controls="controls" width="320" height="200" autoplay="autoplay" loop preload="auto" poster="https://jooinn.com/images/beautiful-natural-flower-3.jpg" src="https://youtu.be/fEErySYqItI">
+    <source src="https://youtu.be/fEErySYqItI" type="video/mp4">
+    <source src="https://youtu.be/fEErySYqItI" type="video/ogg">
+    Your browser does not support the HTML5 Video element.
+</video> 
+
+div id="muteYouTubeVideoPlayer"></div>
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'YOUR_VIDEO_ID', // YouTube Video ID
+    width: 560,               // Player width (in px)
+    height: 316,              // Player height (in px)
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 1,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 0         // Hide video controls when playing
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+</script>

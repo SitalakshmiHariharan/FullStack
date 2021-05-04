@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      .flipCard {
+        width:250px;
+        height:100px;
+        margin: 30px; /* space between two cards*/
+        float: left; /*to stack them horizontally*/
+      }
+      .flipCard > .top {
+        position: absolute;
+        transform: perspective(500px) rotateY(0deg);
+        background: #80BFFF;
+        width:250px; /* same as container div*/
+        height:100px; /* same as container div */
+        padding:15px;
+        border-radius:15px; /* to get rounded borders*/
+        backface-visibility: hidden; /* to not see the back side elements when they are turning around*/
+        transition: transform .5s linear 0s; /* to animate the transform property*/
+      }
+      .flipCard > .bottom {
+        position: absolute;
+        transform: perspective(500px) rotateY(180deg);
+        background: #FC0;
+        width:250px; /* same as container div*/
+        height:100px; /* same as container div*/
+        padding:15px;
+        border-radius:15px; /* to get rounded borders*/
+        backface-visibility: hidden; /* to not see the back side elements when they are turning around*/
+        transition: transform .5s linear 0s; /* to animate the transform property*/
+      }
+      .flipCard:hover > .top {
+      transform: perspective(500px) rotateY(-180deg);
+      }
+      .flipCard:hover > .bottom {
+      transform: perspective(500px) rotateY(0deg);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flipCard">
+      <div class="top"> Prathee is devilish</div>
+      <div class="bottom"> Yes.. he is devlishly handsome!!! </div>
+    </div>
+    <div class="flipCard">
+      <div class="top"> Adithu is paranoid </div>
+      <div class="bottom"> He is paranoid about silly things... </div>
+    </div>
+    <div class="flipCard">
+      <div class="top"> Ashwin is a troublemaker</div>
+      <div class="bottom"> Just Kidding!! He is the sweetest thing that ever grew beside a human door </div>
+    </div>
+  </body>
+</html>

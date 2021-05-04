@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeStyle(){
+var para = document.getElementsByTagName("p");
+var paraChange = para[0].style.color = "blue";
+}
+
+function validate(){
+//document.write("Inside the function");
+var phone = document.getElementById("num").value;
+var len = phone.length;
+document.write(phone);
+if(len <10)
+{
+  alert("Please enter valid phone number");
+}
+}
+</script>
+</head>
+<body>
+
+<input type="text" id="num" name="num" onblur="validate();">
+
+<button> Submit </button>
+
+</body>
+</html>

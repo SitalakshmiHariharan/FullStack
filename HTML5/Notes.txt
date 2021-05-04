@@ -1,0 +1,12 @@
+Recommended method to detect browser compatibility for features - Modernizr
+
+If we try to vioew a new HTML5 input form type in a old browser it falls back to standard text input. In other words, HTML5 Inputs types are not supported in older browsers Like IE7-IE8 and automatically fall back to input type="text" which is supported in these browsers.
+ 
+The tag that represents an independent piece of content of document in html 5 is the article tag. The article tag represents a portion of contents that individually form a part of a site or document individually, without the aid of any other component, say for example the articles printed in magazine, newspaper or any book.
+
+Input control represents a date and time (year, month, day, hour, minute, second, fractions of a second) encoded according to ISO 8601 with the time zone set to UTC in Web Form 2.0
+
+You can validate the technical quality of your webpage using W3C validator (https://validator.w3.org/). This validation will check the website code and tells whether it follows all W3C standards.
+
+
+Ctrl + Shift + J - to open the browser console
